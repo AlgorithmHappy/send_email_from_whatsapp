@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0" version="28.1.1">
+  <diagram name="Page-1" id="Tbn9QoMlv2ZTY2sWYruB">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="av7QQsb6YChdUsI7Peqn-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=light-dark(#000000,#000000);" edge="1" parent="1" source="av7QQsb6YChdUsI7Peqn-1" target="av7QQsb6YChdUsI7Peqn-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="av7QQsb6YChdUsI7Peqn-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Social_Media-2937/1_Whatsapp2_colored_svg-1018.svg" vertex="1" parent="1">
+          <mxGeometry x="130" y="180" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="av7QQsb6YChdUsI7Peqn-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);" edge="1" parent="1" source="av7QQsb6YChdUsI7Peqn-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="av7QQsb6YChdUsI7Peqn-2" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.mobile_client;fillColor=#D2D3D3;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry y="170" width="57.86" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="av7QQsb6YChdUsI7Peqn-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#000000);" edge="1" parent="1" source="av7QQsb6YChdUsI7Peqn-4" target="av7QQsb6YChdUsI7Peqn-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="av7QQsb6YChdUsI7Peqn-4" value="Evolution API Whatsapp" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.internet_3;fillColor=#D2D3D3;gradientColor=none;fontColor=light-dark(#000000,#000000);" vertex="1" parent="1">
+          <mxGeometry x="260" y="178" width="108.94" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="av7QQsb6YChdUsI7Peqn-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#000000);startArrow=classic;startFill=1;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" edge="1" parent="1" source="av7QQsb6YChdUsI7Peqn-8" target="av7QQsb6YChdUsI7Peqn-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="av7QQsb6YChdUsI7Peqn-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#000000);" edge="1" parent="1" source="av7QQsb6YChdUsI7Peqn-8" target="av7QQsb6YChdUsI7Peqn-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="av7QQsb6YChdUsI7Peqn-8" value="Spring GateWay" style="image;html=1;image=img/lib/clip_art/computers/Server_Tower_128x128.png;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" vertex="1" parent="1">
+          <mxGeometry x="420" y="160" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="av7QQsb6YChdUsI7Peqn-10" value="Base de datos Postgresql" style="image;html=1;image=img/lib/clip_art/computers/Database_128x128.png;labelBackgroundColor=none;fontColor=light-dark(#000000,#000000);" vertex="1" parent="1">
+          <mxGeometry x="425" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="av7QQsb6YChdUsI7Peqn-12" value="Gmail" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=none;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Social_Media-2845/21-Gmail-540.svg;fontColor=light-dark(#000000,#000000);" vertex="1" parent="1">
+          <mxGeometry x="590" y="176" width="78" height="78" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
