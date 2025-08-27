@@ -17,16 +17,6 @@ sera como el intermediario.
 
 **El diagrama es el siguiente**:
 
-architecture-beta
-    service db(database)[Correos y telefonos]
-    service whatsapp(internet)[Recivir mensaje en Evolution API Whatasapp]
-    service miservicio(server)[Mi servicio RESTfull API Spring]
-    service email(internet)[Gmail]
-    service whatsapp2(internet)[Enviar mensaje en Evolution API Whatsapp]
-
-    whatsapp:R --> L:miservicio
-    miservicio:T <--> B:db
-    miservicio:B <--> T:email
-    miservicio:R --> L:whatsapp2
+![Diagrama de la arquitectura](design/Arquitectura.png)
 
 ## Flujo 
