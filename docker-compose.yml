@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres:17.5
+    container_name: db_send_email_from_whatsapp
+    environment:
+      POSTGRES_DB: db_send_email_from_whatsapp
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5432:5432"
+    volumes:
+      - .volumes/db_send_email_from_whatsapp:/var/lib/postgresql/data
