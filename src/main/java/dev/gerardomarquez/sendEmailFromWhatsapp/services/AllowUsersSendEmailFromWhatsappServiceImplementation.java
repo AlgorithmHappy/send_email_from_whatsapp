@@ -29,7 +29,7 @@ public class AllowUsersSendEmailFromWhatsappServiceImplementation implements All
     @Override
     public Response<PageResponse<UserNameResponse>> getAllNamesUsers(Pageable pageable) {
         
-        Page<OnlyNameUserProjection> page = allowNamesUsersRepository.findAllNames(pageable);
+        Page<OnlyNameUserProjection> page = allowNamesUsersRepository.findAllBy(pageable);
         
         List<UserNameResponse> listUserNameResponse = page
             .stream()

@@ -19,6 +19,6 @@ public interface AllowNamesUsersRepository extends JpaRepository<AllowNamesUsers
      * Devuelve la pagina de todos los usuarios
      * @param pageable Parametros de paginado
      */
-    public Page<OnlyNameUserProjection> findAllNames(Pageable pageable);
+    public Page<OnlyNameUserProjection> findAllBy(Pageable pageable);
 }
 
