@@ -9,16 +9,18 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "emails_users")
-@Comment("Tabla que almacena los numeros de telefono que pueden eviar y recivir correos electronicos desde el whatsapp")
+@Table(name = "allow_emails_users")
+@Comment("Tabla que almacena los correos electronicos que pueden enviar correos a partir del mensaje de whatsapp recivido")
 @NoArgsConstructor
 @Data
-public class EmailsUsers {
+public class AllowEmailsUsersEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -44,4 +46,25 @@ public class EmailsUsers {
     @Column(name = "port", nullable = false)
     @Comment("Columna que indica el puerto que permite el envio del correo")
     private Short port;
+
+    @Column(name = "auth", nullable = false)
+    @Comment("Columna que indica si activa la autenticación SMTP. El servidor requerirá usuario y contraseña para enviar correos")
+    private Boolean auth;
+
+    @Column(name = "ttls_enable", nullable = false)
+    @Comment("Columna que habilita o deshabilita el protocolo STARTTLS, que permite cifrar la conexión SMTP usando TLS")
+    private Boolean ttlsEnable;
+
+    @Column(name = "ttls_required", nullable = false)
+    @Comment("Columna que habilita o deshabilita la obligación de la conexión SMTP que use STARTTLS. Si el servidor no soporta STARTTLS, la conexión falla")
+    private Boolean ttlsRequired;
+
+    @Column(name = "ssl_trus", nullable = false)
+    @Comment("Dominio el que deberia confíar en el certificado SSL")
+    private String sslTrust;
+
+    @ManyToOne
+    @JoinColumn(name = "allow_name_user_id", nullable = false)
+    @Comment("Columna que relaciona al usuario")
+    private AllowNamesUsersEntity allowNameUserId;
 }

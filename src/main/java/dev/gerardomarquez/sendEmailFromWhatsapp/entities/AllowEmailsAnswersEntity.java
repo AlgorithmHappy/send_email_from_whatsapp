@@ -16,20 +16,20 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "allow_phones_numbers")
-@Comment("Tabla que almacena los numeros de telefono que pueden eviar y recivir correos electronicos desde el whatsapp")
+@Table(name = "allow_emails_answers")
+@Comment("Tabla que almacena los correos electronicos que de los que se pueden recivir mensajes de whatsapp")
 @NoArgsConstructor
 @Data
-public class AllowPhonesNumbersEntity {
+public class AllowEmailsAnswersEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Comment("Columna de id para identificar uniquivocamente al numero de telefono")
+    @Comment("Columna de id para identificar uniquivocamente al correo del usuario")
     private UUID id;
 
-    @Column(name = "phone_number", length = 13, nullable = false)
-    @Comment("Columna que contiene el numero de telefono con el 521 y su lada por ejemplo 55")
-    private String phoneNumber;
+    @Column(name = "email", length = 40, nullable = false)
+    @Comment("Columna que contiene el correo electronico desde el que se puede recivir mensajes de whatsapp")
+    private String email;
 
     @ManyToOne
     @JoinColumn(name = "allow_name_user_id", nullable = false)
